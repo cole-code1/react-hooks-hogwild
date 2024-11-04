@@ -1,12 +1,16 @@
-import React from "react"
-import HogCard from "./HogCard"
+import React from "react";
+import HogCard from "./HogCard";
 
+function HogList({ hogs }) {
+    const pigCards = hogs.map((hog) => (
+        <HogCard key={hog.name} hog={hog} />
+    ));
 
-function HogList({hogs}){
-    const pig = hogs.map((hog)=>{
-        return(
-    <div className="ui three stackable cards">
-    <HogCard key={pig.name} hog ={hog}/>
-    </div>
-        )})}
-        export default HogList;
+    return (
+        <div className="ui three stackable cards">
+            {pigCards}
+        </div>
+    );
+}
+
+export default HogList;
