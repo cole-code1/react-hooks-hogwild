@@ -10,7 +10,7 @@ function HogDetails({ hog }) {
                 Highest medal achieved: <strong>{medal}</strong>
             </p>
             <p>
-                Weight as a ratio of hog to LG - 24.7 Cu. Ft. French Door Refrigerator with Thru-the-Door Ice and water: <strong>{weight}</strong>
+                Weight<strong>{weight}</strong>
             </p>
         </div>
     );
